@@ -222,10 +222,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-# WiFi HAL
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor \
@@ -243,11 +239,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hostapd_default.conf \
     hostapd \
-    wificond \
-    wifilogd \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    libwpa_client
+    wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
@@ -257,9 +250,13 @@ PRODUCT_PACKAGES += \
     WCNSS_wlan_dictionary.dat
 
 PRODUCT_PACKAGES += \
-    libcurl \
-    tcpdump \
-    wcnss_service 
+    android.hardware.wifi@1.0-service \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
+    libwpa_client \
+    wificond \
+    wifilogd \
+    wcnss_service
 
 PRODUCT_COPY_FILES += \
     kernel/motorola/msm8916/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
