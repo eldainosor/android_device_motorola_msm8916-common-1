@@ -90,3 +90,8 @@ persist.data.netmgrd.qos.enable=true
 
 # Storage
 ro.sys.sdcardfs=true
+
+# ADB
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
